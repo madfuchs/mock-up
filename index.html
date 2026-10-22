@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f3eb" />
+    <meta name="description" content="Bei cu Alex? Votează Da sau Nu și vezi procentele." />
+    <title>Bei cu Alex?</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <main class="poll" aria-labelledby="question">
+      <h1 id="question">Bei cu <span>Alex?</span></h1>
+      <div class="vote-options" aria-label="Răspunsuri">
+        <button class="vote-button vote-yes" type="button" data-vote="yes">
+          <span>Da</span><span id="yes-percentage" class="percentage" hidden></span>
+        </button>
+        <button class="vote-button vote-no" type="button" data-vote="no">
+          <span>Nu</span><span id="no-percentage" class="percentage" hidden></span>
+        </button>
+      </div>
+      <p class="tagline">server de bautura</p>
+      <p id="vote-feedback" class="sr-only" role="status" aria-atomic="true"></p>
+      <noscript><p>Activează JavaScript pentru a vota.</p></noscript>
+    </main>
+  </body>
+</html>
